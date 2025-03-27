@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ACHARYA STUDY CIRCLE</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Fonts & Icons -->
+    <link href="css/fontawesome-all.css" rel="stylesheet" type="text/css">
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            background-image: url("wallpaper 2.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            text-shadow: 2px 2px 5px red;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        .subjects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .subject-card {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 15px;
+            width: 260px;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(255, 255, 0, 0.9);
+        }
+
+        .subject-card h2 {
+            color: skyblue;
+        }
+
+        .textbook-btn {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background: #3498db;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+        }
+
+        .textbook-btn:hover {
+            background: #1d6fa5;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 1);
+            transform: scale(1.05);
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+
+        .scroll-top a {
+            text-decoration: none;
+            background: #3498db;
+            padding: 10px 15px;
+            border-radius: 50%;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to ACHARYA STUDY CIRCLE</h1>
+    <p style="color: cornsilk; font-family: 'Brush Script MT', cursive;">
+        Access study materials, textbooks, and class notes for all subjects.
+    </p>
+
+    <hr>
+    <h2 style="color: skyblue;">Subjects Available</h2>
+
+    <div class="subjects-container">
+
+        <div class="subject-card">
+            <h2>Telugu</h2>
+            <button class="textbook-btn">Text Book</button>
+        </div>
+
+        <div class="subject-card">
+            <h2>Hindi</h2>
+            <button class="textbook-btn">Text Book</button>
+        </div>
+
+        <div class="subject-card">
+            <h2>English</h2>
+            <button class="textbook-btn">Text Book</button>
+        </div>
+
+        <div class="subject-card">
+            <h2>Mathematics</h2>
+            <button class="textbook-btn">Text Book</button>
+        </div>
+
+        <div class="subject-card">
+            <h2>Social Studies</h2>
+            <button class="textbook-btn">Text Book</button>
+        </div>
+
+        <div class="subject-card">
+            <h2>Physics</h2>
+            <button class="textbook-btn">Text Book</button>
+        </div>
+
+        <div class="subject-card">
+            <h2>Biology</h2>
+            <button class="textbook-btn">Text Book</button>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h3>Contact Us</h3>
+    <p>
+        <a href="mailto:b.madhansai9@gmail.com" style="color: lightblue;">acharyastudycirce@gmail.com</a>
+    </p>
+
+    <div class="scroll-top">
+        <a class="smoothscroll" href="#top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".scroll-top").fadeIn();
+        });
+
+        $(".scroll-top a").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+    </script>
+
+</body>
+</html>
